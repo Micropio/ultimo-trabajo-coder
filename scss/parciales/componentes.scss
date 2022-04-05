@@ -1,0 +1,153 @@
+.todo {
+    &__box {
+      max-width: 1200px;
+      margin: 20px auto;
+      max-height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+  
+    &__boxcolor {
+      max-width: 1200px;
+      width: 100%;
+      margin: 1rem auto;
+      max-height: 600px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 2px 0 6px rgba(0, 0, 0, 0.6);
+      color: #fff;
+      background: linear-gradient(45deg,#f19a2d,#fd3402, rgb(161, 47, 236), #ff9933);
+      background-size: 400% 400%;
+      position: relative;
+      animation: cambiar 10s ease-in-out infinite; 
+    }
+  }
+  
+  @keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+  }
+  
+  .box {
+    &__izq {
+      width: 50%;
+      margin-left: 2rem;
+      align-items: center;
+    }
+    &__der {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__center {
+      color: #fff;
+      padding: 3rem;
+      text-align: center;
+    }
+  }
+  
+  .galeria {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .caja {
+    width: auto;
+    height: 50vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 2rem;
+  }
+  
+  .caja img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .caja .hover {
+    width: 0%;
+    height: 50vh;
+    background-color: rgba(202, 142, 51, 0.568);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .hover h3 {
+   color: #fff;
+   font-size: 1.5em;
+   text-transform: uppercase;
+   text-align: center;
+  }
+  
+  .caja:hover .hover {
+    width: 100%;
+  }
+  
+  .boton {   
+    background-color: #0D623B;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 0 auto;
+    margin-right: 70%;
+    margin-bottom: 8%;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    box-shadow: 1px 0 8px rgba(0, 0, 0, 0.6);
+  }
+  .sociales {
+    position: fixed;
+    right: 0;
+    top: 25%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+  }
+  
+  .icon {
+    color: #ffffff;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+    list-style: none;
+  }
+  
+  $redes: (
+   whatsapp: #167c16,
+   facebook: #005acf,
+   twitter: #17c0eb,
+   youtube: #fd3402,
+   instagram: #a421be,
+  );
+
+@each $clave, $valor in $redes {
+  .icon-#{$clave} {
+    background-color: $valor;
+  }
+}
+  .icon:hover {
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5 rgba(0, 0, 0, 0.42);
+  }

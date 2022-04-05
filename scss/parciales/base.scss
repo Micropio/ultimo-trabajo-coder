@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   
+   body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  h1 {
+    color: #f19a2d;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 2rem;
+    font-size: 28px;
+  }
+  
+  h2 {
+    color: #f19a2d;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: bold;
+  }
+  
+  .h2link {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+    text-align: justify;
+  }
+  
+  p {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    padding-right: 2rem;
+    margin-bottom: 2rem; 
+    font-size: 18px;
+    text-align: justify;
+  }
+  
+  .p2 {
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+    color: #fff;
+    font-size: 15px;
+    margin: 15px;
+  }
+
+  .h1blanco, h3 {
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+    font-size: 28px;
+  }
+  
+  .p_blanco {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .imgespecial {
+    max-width: 600px;
+    width: auto;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .todo {
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: auto, auto, auto;
+   grid-template-areas: 
+   "afiliacion"
+   "sucursales"
+   "noticias";
+   row-gap: 2rem;
+   margin-top: 3rem;
+   margin-bottom: 3rem;
+   justify-content: space-between;
+   align-content: center;
+  }
+  
+  section#afiliacion {
+    grid-area: afiliacion;
+  }
+  section#sucursales {
+    grid-area: sucursales;
+  }
+  section#noticias { 
+    grid-area: noticias;
+  }

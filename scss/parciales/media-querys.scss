@@ -1,0 +1,396 @@
+@media all and (max-width: 1024px) {
+    .todo {
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas: 
+      "afiliacion"
+      "sucursales"
+      "noticias";
+      row-gap: 2rem;
+    }
+  
+    header {
+      width: 100%;
+      height: auto;
+    }
+    
+    footer {
+      width: auto;
+      height: auto;
+    }
+    
+    .footer__box {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+    }
+    
+    .header__box {
+      height: 100%;
+      width: auto;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .encabezadologo {
+      width: 85%;
+      height: auto;
+      padding: 1rem;
+      margin-left: 1rem;
+    }
+    
+    .menu_footer {
+      justify-content: center;
+      flex-direction: column;
+      margin: 0;
+      padding: 0rem;
+    }
+    .menu_item {
+      flex-wrap: wrap;
+    }
+    
+    .boton {
+      max-width: 120px;
+      width: 100%;
+    }
+    
+    #afiliacion #sucursales, #noticias {
+      justify-content: space-between;
+      width: auto;
+      height: auto;
+    }
+    
+    .todo__box {
+      flex-direction: column;
+      justify-items: auto;
+      width: auto;
+      height: auto;
+      padding: 1rem;
+    }
+    
+    .todo__boxcolor {
+      flex-direction: column;
+      width: auto;
+      height: auto;
+      margin: 1rem;
+      justify-content: center;
+    }
+    
+    .todo__boxnoticias {
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .box__der, .box__izq {
+    
+      width: 100%;
+      height: 100%;
+      text-align: left;
+      align-items: center;
+    }
+    
+    .box__izq {
+      margin-right: 5%;
+    }
+    
+    .box__img, .imgespecial {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .galeria {
+      flex-direction: column;
+    }
+    
+    .iframe {
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+    }
+    
+    
+    .logo {
+      width: auto;
+    }
+    
+    .formulario {
+      width: 25%;
+      height: 25%;
+    }
+    
+    
+    .listasucursales {
+      max-width: auto;
+      width: auto;
+      height: 100%;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+    }
+    
+    .listasucursales_items {
+      max-width: auto;
+      width: auto;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+    }
+    
+    .footer__box {
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .btn {
+        margin-bottom: 1.5rem;
+      }
+      
+    .btn-open-sidebar {
+      display: inline-block;
+      background-color: #f19a2d;
+      color: #fff;
+      padding: 0,5rem 1rem;
+    }
+    
+    .menu_lista {
+      background-color: #f19a2d;
+      width: 70%;
+      max-width: auto;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      transition: transform 0.5s;
+      z-index: 100;
+    }
+    #sidebar:target {
+      transform: translateX(0%);
+    }
+    
+    .menu_itemo--ocultar {
+      display: block;
+    }
+    
+    .menu_listaparalelo {
+      flex-direction: column;
+    }
+    
+    .sociales {
+        position: relative;
+        right: 0;
+        top: 11.8%;
+        flex-direction: row;
+        z-index: 100;
+      }
+    
+    .icon-instagram {
+        border-radius: 0 1rem 0 0;
+      }
+    
+    }
+  
+  
+  @media screen and (max-width: 600px) {
+  .todo {
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    "afiliacion"
+    "sucursales"
+    "noticias";
+    row-gap: 2rem;
+  }
+  
+  header {
+    width: 100%;
+    height: auto;
+  }
+  
+  footer {
+    width: auto;
+    height: auto;
+  }
+  
+  .footer__box {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  
+  .header__box {
+    height: 100%;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .encabezadologo {
+    width: 85%;
+    height: auto;
+    padding: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .menu_listaparalelo {
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0rem;
+  }
+  .menu_item {
+    flex-wrap: wrap;
+  }
+  
+  .boton {
+    max-width: 120px;
+    width: 100%;
+  }
+  
+  #afiliacion #sucursales, #noticias {
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+  }
+  
+  .todo__box {
+    flex-direction: column;
+    justify-items: auto;
+    width: auto;
+    height: auto;
+    padding: 1rem;
+  }
+  
+  .todo__boxcolor {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin: 1rem;
+    justify-content: center;
+  }
+  
+  .todo__boxnoticias {
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .box__der, .box__izq {
+  
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    align-items: center;
+  }
+  
+  .box__izq {
+    margin-right: 5%;
+  }
+  
+  .box__img, .imgespecial {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .galeria {
+    flex-direction: column;
+  }
+  
+  .iframe {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+  
+  
+  .logo {
+    width: auto;
+  }
+  
+  .formulario {
+    width: 25%;
+    height: 25%;
+  }
+  
+  
+  .listasucursales {
+    max-width: auto;
+    width: auto;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  
+  .listasucursales_items {
+    max-width: auto;
+    width: auto;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .footer__box {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-open-sidebar {
+    display: inline-block;
+    background-color: #f19a2d;
+    color: #fff;
+    padding: 0,5rem 1rem;
+  }
+  
+  .menu_lista {
+    background-color: #f19a2d;
+    width: 70%;
+    max-width: auto;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    transition: transform 0.5s;
+    z-index: 100;
+  }
+
+  #sidebar:target {
+    transform: translateX(0%);
+  }
+  
+  .menu_itemo--ocultar {
+    display: block;
+  }
+  
+  .menu_menu_footer{
+    flex-direction: column;
+  }
+  
+  .sociales {
+      position: relative;
+      right: 0;
+      top: 11.8%;
+      flex-direction: row;
+      z-index: 100;
+    }
+  
+  .icon-instagram {
+      border-radius: 0 1rem 0 0;
+    }
+  }

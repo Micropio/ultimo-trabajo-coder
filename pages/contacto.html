@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es-la">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutual de Pastelero - contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300&family=Roboto+Slab:wght@100;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <meta name="description" content="Es una mutual del rubro de pasteleros que ofrece beneficios, descuentos y servicios excluisvos a sus asociados. La mutual que esta cerca.">
+    <meta name="keywords"  content="Pastellero, mutual, beneficios, descuentos, servicios, rubro, Argentina, contacto, mensaje">
+</head>
+
+<body>
+<header class="header">
+  <div class="header__box">
+  <div>
+  <img class="encabezadologo" src="../Imagenes/Mutual de Pasteleros.svg" alt="Logotipo de Pasteleros">
+  </div>
+  <nav class="menu"> 
+            <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i>
+            <ul class="menu_lista" id="sidebar" >  
+                <li class="menu_item"><a class="btn btn-outline-light" href="../index.html">Inicio</a></li>
+                <li class="menu_item"><a class="btn btn-outline-light" href="../pages/institucional.html">Institucional</a></li>
+                <li class="menu_item"><a class="btn btn-outline-light" href="../pages/beneficios.html">Beneficios</a></li>
+                <li class="menu_item"><a class="btn btn-outline-light" href="../pages/sucursales.html">Sucursales</a></li>
+                <li class="menu_item"><a class="btn btn-light" href="../pages/contacto.html">Contacto</a></li>
+                <li class="menu_item menu_itemo--ocultar"><a class="btn-close btn-close-white" aria-label="Close" href="#"></a></li> 
+            </ul>
+        </nav>
+        </div> 
+    </header>
+
+    <section class="todo">
+
+        <section id="afiliacion" class="todo__boxcolor">
+            <div class="box__center"> 
+                <h1 class="h1blanco">Consultas de forma rapida y segura</h1>
+                <p class="p_blanco">Escribinos tu consulta para que podamos ayudarte y brindarte más información acerca de nuestros servicios. Trabajamos para lograr un cambio en la cultura del servicio público.</p>
+            </div> 
+        </section>
+       
+        <section id="sucursales" class="todo__box">
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="Nombre" class="form-label">Nombre completo</label>
+                  <input type="text" class="form-control" id="Nombre">
+                </div>
+                <div class="col-md-6">
+                  <label for="dni" class="form-label">DNI</label>
+                  <input type="number" class="form-control" id="dni">
+                </div>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Genero</option>
+                    <option value="1">Mujer</option>
+                    <option value="2">Hombre</option>
+                    <option value="3">No Binario</option>
+                    </select>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">E-mail</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="pasteleros@mutual.com">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Localidad</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Provincia</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Buenos Aires</option>
+                    <option>Ciudad Autonoma de Buenos Aires</option>
+                    <option>Catamarca</option>
+                    <option>Chaco</option>
+                    <option>Chubut</option>
+                    <option>Cordoba</option>
+                    <option>Corrientes</option>
+                    <option>Entre Rios</option>
+                    <option>Formosa</option>
+                    <option>Jujuy</option>
+                    <option>La Pampa</option>
+                    <option>La Rioja</option>
+                    <option>Mendoza</option>
+                    <option>Misiones</option>
+                    <option>Neuquen</option>
+                    <option>Rio Negro</option>
+                    <option>Salta</option>
+                    <option>San Juan</option>
+                    <option>San Luis</option>
+                    <option>Santa Cruz</option>
+                    <option>Santa Fe</option>
+                    <option>Santiago Del Estero</option>
+                    <option>Tierra del Fuego</option>
+                    <option>Tucuman</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">C.P.</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Consulta:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                  </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Confirmar
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                  <button type="reset" class="btn btn-outline-danger"> Limpiar</button>
+                </div>
+              </form>
+        </section>
+
+    </section>
+    
+    <div class="sociales">
+        <a class="icon icon-whatsapp" href="https://api.whatsapp.com/"><i  class="fab fa-whatsapp"></i></a>
+        <a class="icon icon-facebook" href="https://es-la.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+        <a class="icon icon-twitter" href="https://twitter.com/?lang=es"><i class="fab fa-twitter-square"></i></a>
+        <a class="icon icon-youtube" href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i></a>
+        <a class="icon icon-instagram" href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <footer class="footer">
+        <div class="header__box">
+            <div>
+            <a href="./index.html"><img class="logofooter" src="../Imagenes/Mutual de Pasteleros 2.svg" alt="Logotipo de Pasteleros"></a>
+            </div>
+            <nav>
+            <ul class="menu_footer">
+                <li class="menu_item"><a class="btn btn-outline-light" href="../pages/institucional.html">Institucional</a></li>
+                <li class="menu_item"><a class="btn btn-outline-light" href="../pages/beneficios.html">beneficios</a></li>
+                <li class="menu_item"><a class="btn btn-outline-light" href="../pages/sucursales.html">sucursales</a></li>
+                <li class="menu_item"><a class="btn btn-outline-light" href="../pages/contacto.html">contacto</a></li>
+               </ul>
+            </nav>
+            <div>
+            <p class="p2">Derechos reservados - 2022</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
+            
+    </body>
+    </html>
